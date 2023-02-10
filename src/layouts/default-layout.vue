@@ -11,6 +11,7 @@
         >
           Music Library
         </q-toolbar-title>
+
         <q-tabs>
           <q-route-tab
             to="/albums"
@@ -20,45 +21,24 @@
             to="/artists"
             label="Artists"
           />
-          <q-route-tab
-            to="/songs"
-            label="Songs"
-          />
         </q-tabs>
       </q-toolbar>
     </q-header>
 
     <q-page-container class="container">
       <router-view />
+      <q-separator class="q-mt-lg q-mb-xl" />
     </q-page-container>
 
-    <q-footer
-
-      class="bg-blue-grey-10 footer q-pa-md"
-    >
+    <q-footer class="bg-blue-grey-10 footer q-pa-md">
       <div>
         created by
         <a
           href="https://github.com/nymphaea-v1"
-          class="author-link cursor-pointer"
+          class="link cursor-pointer"
           target="_blank"
         >nymphaea-v1</a>
       </div>
     </q-footer>
   </q-layout>
 </template>
-
-<script setup lang="ts">
-</script>
-
-<style scoped lang="scss">
-.author-link {
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-
-  &:hover {
-    color: $primary;
-  }
-}
-</style>
