@@ -4,6 +4,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('src/layouts/default-layout.vue'),
+    redirect: { name: 'albums' },
     children: [
       { path: 'artists', name: 'artists', component: () => import('pages/artists.vue') },
       {
