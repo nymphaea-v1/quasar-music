@@ -62,7 +62,7 @@ import { storeToRefs } from 'pinia'
 import { useLibraryStore } from 'src/stores/library'
 
 const library = useLibraryStore()
-const songs = storeToRefs(library).songs
+const { songs } = storeToRefs(library)
 
 const id = computed(() => +useRoute().params.id)
 

@@ -8,9 +8,9 @@
       <q-item-label class="text-body1 q-mb-sm">
         Author: {{ author }}
       </q-item-label>
+
       <q-item-label class="text-body1 q-mb-sm ellipsis-2-lines">
-        Songs:
-        <span>{{ songNames }}</span>
+        Songs: {{ songNames }}
       </q-item-label>
     </template>
 

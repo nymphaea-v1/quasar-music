@@ -9,9 +9,7 @@
       :key="index"
       v-bind="$attrs"
     >
-      <slot
-        :item="item"
-      />
+      <slot :item="item" />
     </q-item>
   </q-list>
 </template>

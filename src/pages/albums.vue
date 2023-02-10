@@ -28,9 +28,7 @@ const { albums } = storeToRefs(useLibraryStore())
 
 const router = useRouter()
 
-const openAlbum = (id: id) => {
-  router.push({ name: 'album', params: { id } })
-}
+const openAlbum = (id: id) => router.push({ name: 'album', params: { id } })
 </script>
 
 <style lang="scss">

@@ -6,8 +6,7 @@
 
     <template #default>
       <q-item-label class="text-body1 q-mb-sm ellipsis-2-lines">
-        Albums:
-        <span>{{ albumNames }}</span>
+        Albums: {{ albumNames }}
       </q-item-label>
     </template>
 
