@@ -1,8 +1,8 @@
 <template>
   <c-list
-    v-if="album"
+    v-if="album !== undefined && albumSongs !== undefined"
     class="col-12"
-    :items="album.songIds"
+    :items="albumSongs"
   >
     <template #heading>
       <div class="row justify-between">
@@ -15,8 +15,8 @@
       </div>
     </template>
 
-    <template #default="{ item: songId }">
-      <c-song-card :song="(songs.get(songId) as Song)" />
+    <template #default="{ item: song }">
+      <c-song-card :song="song" />
     </template>
   </c-list>
 
@@ -72,6 +72,8 @@ const album = computed(() => {
 
   return album
 })
+
+const albumSongs = computed(() => album.value?.songIds.map(id => songs.value.get(id) as Song).filter(song => song !== undefined))
 
 const isSongCreatorOpen = ref(false)
 const songName = ref('')
