@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fec4f768-a711-4ed2-b3f7-91c751ab2374/deploy-status)](https://quasar-music-library.netlify.app/#/)
+
 # Music Library App
 
 Your collection of favorite music artists & songs
