@@ -1,4 +1,4 @@
-# Music Library App (quasar-music)
+# Music Library App
 
 Your collection of favorite music artists & songs
 
