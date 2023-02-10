@@ -2,7 +2,7 @@ import { useLocalStorage } from '@vueuse/core'
 import { defineStore } from 'pinia'
 import { getAlbums, getArtists, getSongs } from 'src/utils/initial-library'
 
-const generateId = () => Math.random() * 100000
+const generateId = () => Math.floor(Math.random() * 100000)
 
 export const useLibraryStore = defineStore('library', () => {
   const albums = useLocalStorage<Map<id, Album>>('albums', getAlbums())
@@ -20,6 +20,7 @@ export const useLibraryStore = defineStore('library', () => {
     songModified.id = songId
     songModified.albumId = albumId
     songModified.albumIndex = album.songIds.length
+    songs.value.set(songId, songModified)
 
     return true
   }
