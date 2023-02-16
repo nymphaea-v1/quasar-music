@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    image: nglct/quasar-music-app
+    ports:
+      - 8080:9000

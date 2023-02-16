@@ -12,7 +12,19 @@ Your collection of favorite music artists & songs
 - TypeScript
 - SCSS
 
-## Instalation
+## Run with Docker 
+
+### Start the development server on http://localhost:8080
+```bash
+docker compose up
+```
+
+### Stop and remove the docker container
+```bash
+docker compose down
+```
+
+## Installation
 
 ### Install the dependencies
 ```bash
@@ -25,7 +37,7 @@ npm install
 ```bash
 yarn dev
 # or
-npm run dev
+npm start
 ```
 
 ### Lint the files
